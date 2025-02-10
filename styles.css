@@ -17,7 +17,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 body {
@@ -26,7 +25,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
-    padding: 20%;
+    min-height: 100vh;
+    /* overflow: hidden; */
 }
 
 .header {
@@ -120,3 +120,13 @@ body {
 .cart .fa-shopping-cart {
     color: var(--white);
 }
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 700px;
+        max-height: 500px;
+    }
+}
+
