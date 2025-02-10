@@ -45,6 +45,15 @@ body {
     width: 60%;
 } 
 
+.parfum-img-phone {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 60%;
+    display: none;
+    visibility: hidden;
+} 
+
 .container {
     width: 600px;
     height: 447px;
@@ -121,12 +130,39 @@ body {
     color: var(--white);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .container {
         display: flex;
-        flex-direction: row;
-        max-width: 700px;
-        max-height: 500px;
+        flex-direction: column;
+        width: 380px;
+        height: auto;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .container-child {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .container-child .cart {
+        justify-content: center;
+    }
+
+     .size-big {
+        font-size: 1.8em;
+    }
+
+    .parfum-img-phone {
+        display: block;
+        visibility: visible;
+        height: auto;
+        width: 110%;
+        object-fit: cover;
+    }
+
+    .parfum-img{
+        display: none;
     }
 }
 
